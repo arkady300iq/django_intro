@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF_8">
+    <title> Blog list</title>
+</head>
+<body>
+    <h1>
+        Blog
+    </h1>
+    <ul>
+        {% for blog in blog_list %}
+            
+            <li>
+                {{blog.name}} - {{blog.published_date}}
+            </li>
+            
+        {% endfor %}
+    </ul>
+</body>
+
+    
+</html>
