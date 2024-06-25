@@ -12,7 +12,10 @@
         {% for blog in blog_list %}
             
             <li>
-                {{blog.name}} - {{blog.published_date}}
+                <h2>{{blog.name}} - {{blog.published_date}}
+                <p><a href="{% url 'blog_details' blog.id %}" target="_blank"> Details</a></p>
+                <p><a href="{% url 'blog_by_author' blog.author.id %}" target="_blank">Posts by Author</a></p>
+
             </li>
             
         {% endfor %}

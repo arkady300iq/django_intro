@@ -1,0 +1,14 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Posts by Author</title>
+</head>
+<body>
+    <h1>Posts by Author {{ author_id }}</h1>
+    <ul>
+        {% for blog in blog %}
+            <li>{{ blog.name }} - {{ blog.published_date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
